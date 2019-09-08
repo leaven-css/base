@@ -1,0 +1,26 @@
+/**
+ * 1. Use default system-ui font and make sure all emojis have color
+ * 2. Make sure no text resizing happens on mobile
+ */
+html {
+  font-family: system-ui, sans-serif, color-emoji;  /* 1 */
+  text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Reset the default box-sizing
+ */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Remove default margin
+ * 2. Set body font size to a standard unit
+ */
+body {
+  margin: 0; /* 1 */
+  font-size: 1rem; /* 2 */
+}
