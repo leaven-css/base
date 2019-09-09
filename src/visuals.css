@@ -1,0 +1,39 @@
+/**
+ * 1. Update <hr> styling to use text color
+ * 2. Use correct box sizing in Firefox
+ * 3. Display overflow in Edge and IE
+ */
+hr {
+  border-width: 0 0 1px 0; /* 1 */
+  border-color: currentColor; /* 1 */
+  border-style: solid; /* 1 */
+  box-sizing: content-box; /* 2 */
+  height: 0;
+  overflow: visible; /* 3 */
+}
+
+figure {
+  margin: 0;
+}
+
+progress {
+  appearance: none;
+  border: none;
+  vertical-align: middle;
+}
+
+/**
+ * 1. Remove spacing below <img>
+ * 2. Make images responsive
+ */
+img {
+  vertical-align: middle; /* 1 */
+  max-width: 100%; /* 2 */
+}
+
+/**
+ * Allow SVGs to use inherited `color`
+ */
+svg:not([fill]) {
+  fill: currentColor;
+}

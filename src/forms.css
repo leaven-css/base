@@ -1,0 +1,165 @@
+/**
+ * 1. Reset appearance to allow styling
+ * 2. Inherit font styles to override specific browser defaults
+ * 3. Remove border styles
+ */
+button,
+input,
+select,
+textarea {
+  appearance: none; /* 1 */
+  color: inherit;
+  font: inherit; /* 2 */
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-color: currentColor; /* 3 */
+  border-width: 0; /* 3 */
+  border-style: solid; /* 3 */
+  border-radius: 0; /* 3 */
+}
+
+/**
+ * 1. Remove inner focus styles in Firefox
+ * 2. Add focus styles outside in Firefox
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &::-moz-focus-inner {
+    border-style: none; /* 1 */
+    padding: 0; /* 1 */
+  }
+
+  &:-moz-focusring {
+    outline: 1px dotted ButtonText; /* 2 */
+  }
+}
+
+/**
+ * 1. Correct outline style in Safari and Chrome
+ */
+input[type="search"] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Only show spin button for the number input on hover/focus in Safari/Firefox
+ */
+input[type="number"] {
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button {
+    visibility: hidden;
+  }
+
+  &:focus,
+  &:hover {
+    -moz-appearance: number-input;
+  }
+
+  &:focus::-webkit-inner-spin-button,
+  &:hover::-webkit-inner-spin-button {
+    visibility: visible;
+  }
+}
+
+/**
+ * 1. Align range correctly
+ * 2. Allow range thumb to be styled
+ */
+input[type="range"] {
+  vertical-align: middle; /* 1 */
+
+  &::range-thumb {
+    appearance: none; /* 2 */
+  }
+}
+
+/**
+ * 1. Remove extra padding in Firefox
+ * 2. Hide <select> arrow in IE11
+ */
+select {
+  cursor: pointer;
+
+  & > option {
+    padding: 0; /* 1 */
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &::-ms-expand {
+    display: none; /* 2 */
+  }
+}
+
+/**
+ * Prevent <textarea> content from being resized past size of parent
+ */
+textarea {
+  max-width: 100%;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Remove `:invalid` styling from Firefox
+ */
+:invalid {
+  box-shadow: none;
+}
+
+/**
+ * 1. Reset placeholder opacity in Firefox
+ */
+::placeholder {
+  color: inherit;
+  opacity: 1; /* 1 */
+}
+
+/**
+ * Reset the spin button height
+ */
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+/**
+ * Remove extra padding in Safari
+ */
+::-webkit-search-decoration {
+  appearance: none;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-color-swatch {
+  border: 0;
+}
+
+/**
+ * Hide checkbox and radio for IE11
+ */
+::-ms-check {
+  display: none;
+}

@@ -1,0 +1,153 @@
+/**
+ * Reset links to inherit their color and text-decoration
+ */
+:any-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+ * Use system monospace font instead of `monospace`
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: system-monospace;
+}
+
+/**
+ * Allow preformated text to be scrollable
+ */
+pre {
+  margin: 0;
+  overflow: scroll;
+}
+
+/**
+ * 1. Remove border style in Chrome
+ * 2. Normalize text decoration across browsers
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: none; /* 2 */
+}
+
+/**
+ * Remove default italic styling
+ */
+address,
+cite,
+em,
+i {
+  font-style: normal;
+}
+
+/**
+ * Remove default bold styling
+ */
+b,
+strong {
+  font-weight: normal;
+}
+
+/**
+ * Remove default text decoration
+ */
+ins,
+del,
+s {
+  text-decoration: none;
+}
+
+/**
+ * Remove default quote marks
+ */
+q {
+  quotes: none;
+}
+
+/**
+ * Remove default margin
+ */
+blockquote {
+  margin: 0;
+}
+
+small {
+  font-size: 100%;
+}
+
+sub,
+sup {
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/**
+ * Remove default list styles
+ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dl,
+dd {
+  margin: 0;
+}
+
+mark {
+  background-color: inherit;
+  color: inherit;
+}
+
+/**
+ * Make sure <main> is correctly styled in IE
+ */
+main {
+  display: block;
+}
+
+/**
+ * Make sure <template> is correctly styled in IE
+ */
+template {
+  display: none;
+}
+
+/**
+ * Make sure <output> is correctly styled in IE
+ */
+output {
+  display: inline-block;
+}
+
+/**
+ * 1. Make <summary> consistent in all browsers
+ * 2. Hide <summary> marker in Firefox
+ */
+summary {
+  display: list-item; /* 1 */
+  cursor: pointer;
+
+  &::marker {
+    display: none; /* 2 */
+  }
+}
+
+/**
+ * Hide <summary> marker in Safari and Chrome
+ */
+::-webkit-details-marker {
+  display: none;
+}
+
+/**
+ * Make <details> consistent in all browsers
+ */
+details {
+  display: block;
+}

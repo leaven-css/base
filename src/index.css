@@ -1,1 +1,6 @@
 @import "./document.css";
+@import "./content.css";
+@import "./forms.css";
+@import "./tables.css";
+@import "./typography.css";
+@import "./visuals.css";
