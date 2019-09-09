@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Leaven Test</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/styles.css" id="stylesheet">
+  <style type="text/css">
+    .toggle-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: whitesmoke;
+      font-size: 1rem;
+      border: none;
+      padding: .25rem .5rem;
+      border-radius: 5px;
+      margin: 0;
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+    }
+
+    .toggle-button:active {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Heading One</h1>
+      <h2>Heading Two</h2>
+      <h3>Heading Three</h3>
+      <h4>Heading Four</h4>
+      <h5>Heading Five</h5>
+      <h6>Heading Six</h6>
+      <p>
+        <strong>Paragraph</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>
+        <a href="/">Link</a>
+        <a id="anchor">Anchor</a>
+        <abbr title="Abbreviation">Abbr</abbr>
+        <b>Bring Attention To</b>
+        <cite>Cite</cite>
+        <code>Code</code>
+        <data>Data</data>
+        <del>Delete</del>
+        <em>Emphasis</em>
+        <i>Important Information</i>
+        <ins>Insert</ins>
+        <kbd>Keyboard</kbd>
+        <mark>Mark</mark>
+        <s>Strikethrough</s>
+        <samp>Sample</samp>
+        <small>Small</small>
+        <strong>Strong</strong>
+        <sub>Subscript</sub>
+        <sup>Superscript</sup>
+        <time>Time</time>
+        <q>Quote</q>
+      </p>
+
+      <blockquote>
+        <p>
+          <strong>Blockquote</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <cite>– Lorem Ipsum Generator</cite>
+      </blockquote>
+      <address>123 Main Street</address>
+    </article>
+    <section>
+      <ul>
+        <li><strong>Unordered List</strong> One</li>
+        <li>Unordered List Two</li>
+        <li>Unordered List Three</li>
+      </ul>
+
+      <ol>
+        <li><strong>Ordered List</strong> One</li>
+        <li>Ordered List Two</li>
+        <li>Ordered List Three</li>
+      </ol>
+
+      <dl>
+        <dt><strong>Description</strong> Title One</dt>
+        <dd>Description Detail One</dd>
+        <dt>Description Title Two</dt>
+        <dd>Description Detail Two</dd>
+        <dt>Description Title Three</dt>
+        <dd>Description Detail Three</dd>
+      </dl>
+
+      <details>
+        <summary>Summary</summary>
+        Details
+      </details>
+    </section>
+
+    <form>
+      <div>
+        <button>Button</button>
+        <input type="button" name="input-button" value="Input Button" />
+        <input type="reset" name="input-reset" value="Input Reset" />
+        <input type="submit" name="input-submit" value="Input Submit" />
+        <button disabled>Disabled Button</button>
+      </div>
+
+      <div>
+        <label for="select-normal">Normal Select</label>
+        <select name="select-normal-name" id="select-normal">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="select-multiple">Multiple Select</label>
+        <select name="select-multiple-name" id="select-multiple" multiple>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="select-multiple">Multiple Select</label>
+        <select name="select-size-name" id="select-size" size="2">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="select-disabled">Disabled Select</label>
+
+        <select name="select-disabled" id="select-disabled" disabled>
+          <option>Option 1</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="text-input">Text</label>
+        <input type="text" id="text-input" name="text-input-name" placeholder="Placeholder" value="Initial Value">
+      </div>
+
+      <div>
+        <label for="text-input-placeholder">Text Placeholder</label>
+        <input type="text" id="text-input-placeholder" name="text-input-placeholder-name" placeholder="Placeholder">
+      </div>
+
+      <div>
+        <label for="text-input-required">Text Required</label>
+        <input type="text" id="text-input-required" required name="text-input-required-name" placeholder="Required">
+      </div>
+
+      <div>
+        <label for="text-input-disabled">Text Disabled</label>
+        <input type="text" id="text-input-disabled" name="text-input-disabled-name" placeholder="Placeholder" disabled>
+      </div>
+
+      <fieldset>
+        <legend>Fieldset Legend</legend>
+        <label for="fieldset-text-input">Fieldset Text</label>
+        <input type="text" id="fieldset-text-input" name="fieldset-text-input-name" placeholder="Placeholder" value="Initial Value">
+      </fieldset>
+
+      <div>
+        <label for="color-input">Color</label>
+        <input class="color-input" type="color" id="color-input" name="color-input-name">
+      </div>
+
+      <div>
+        <label for="date-input">Date</label>
+        <input type="date" id="date-input" name="date-input-name">
+      </div>
+
+      <div>
+        <label for="datetime-local-input">Datetime Local</label>
+        <input type="datetime-local" id="datetime-local-input" name="datetime-local-input-name">
+      </div>
+
+      <div>
+        <label for="email-input">Email</label>
+        <input type="email" id="email-input" name="email-input-name" required>
+      </div>
+
+      <div>
+        <label for="month-input">Month</label>
+        <input type="month" id="month-input" name="month-input-name">
+      </div>
+
+      <div>
+        <label for="number-input">Number</label>
+        <input type="number" id="number-input" name="number-input-name">
+      </div>
+
+      <div>
+        <label for="password-input">Password</label>
+        <input type="password" id="password-input" name="password-input-name">
+      </div>
+
+      <div>
+        <label for="search-input">Search</label>
+        <input type="search" id="search-input" name="search-input-name">
+      </div>
+
+      <div>
+        <label for="tel-input">Telephone</label>
+        <input type="tel" id="tel-input" name="tel-input-name">
+      </div>
+
+      <div>
+        <label for="time-input">Time</label>
+        <input type="time" id="time-input" name="time-input-name">
+      </div>
+
+      <div>
+        <label for="url-input">URL</label>
+        <input type="url" id="url-input" name="url-input-name">
+      </div>
+
+      <div>
+        <label for="week-input">Week</label>
+        <input type="week" id="week-input" name="week-input-name">
+      </div>
+
+      <div>
+        <label for="textarea-example">Textarea</label>
+        <textarea id="textarea-example" name="textarea-example-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" id="checkbox-one" name="checkbox-one"><label for="checkbox-one">Checkbox One</label>
+        <input type="checkbox" id="checkbox-two" name="checkbox-two"><label for="checkbox-two">Checkbox Two</label>
+      </div>
+
+      <div>
+        <input type="radio" id="radio-one" name="radio"><label for="radio-one">Radio One</label>
+        <input type="radio" id="radio-Two" name="radio"><label for="radio-Two">Radio Two</label>
+      </div>
+
+      <div>
+        <label for="file-input">File</label>
+        <input type="file" id="file-input" name="file-input-name">
+      </div>
+
+      <div>
+        <label for="range-input">Range</label>
+        <input type="range" id="range-input" name="range-input-name" min="0" max="10">
+      </div>
+    </form>
+
+    <section>
+      <progress value="0" max="100"></progress>
+      <progress value="50" max="100"></progress>
+      <progress value="100" max="100"></progress>
+    </section>
+
+    <section>
+      <table>
+        <caption>Table Caption</caption>
+        <thead>
+          <tr>
+            <th>First Column</th>
+            <th>Second Column</th>
+            <th>Third Column</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 Cell</td>
+            <td>2 Cell</td>
+            <td>3 Cell</td>
+          </tr>
+          <tr>
+            <td>1 Cell</td>
+            <td>2 Cell</td>
+            <td>3 Cell</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>1 Foot</td>
+            <td>2 Foot</td>
+            <td>3 Foot</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+<pre>Preformated text with overflow! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre>
+    <section>
+      <figure style="max-width: 800px">
+        <img
+          src="/assets/shulmans_market_640.jpg"
+          srcset="/assets/shulmans_market_640.jpg 640w,
+                  /assets/shulmans_market_1280.jpg 1280w,
+                  /assets/shulmans_market_2560.jpg 2560w"
+          alt="Woman and children outside of Shulman's Market, on N at Union Street S.W., Washington, D.C. circa 1941/42"
+        >
+        <figcaption><cite>Shulman's Market, on N at Union Street S.W., Washington, D.C.</cite> by Louise Rosskam. Between 1941 and 1942. <a href="https://www.loc.gov/item/2017877966/">Library of Congress, Prints & Photographs Division, FSA-OWI Collection LC-DIG-FSAC-1A34421</a></figcaption>
+      </figure>
+
+      <hr>
+
+      <div style="color: blue;">
+        <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect fill="currentColor" x="0" y="0" width="50" height="50"></rect>
+        </svg>
+      </div>
+    </section>
+
+  </main>
+
+  <button id="toggle-stylesheet" class="toggle-button">
+    Base
+  </button>
+
+  <script src="/script.js"></script>
+</body>
+</html>
