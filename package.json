@@ -1,6 +1,6 @@
 {
   "name": "@leaven-css/base",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A good starter for your styles",
   "main": "./dist/base.min.css",
   "author": "Philip Bordallo",
