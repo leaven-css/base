@@ -10,6 +10,7 @@
     "build-example-styles": "postcss ./src/index.css --output ./example/styles.css --verbose",
     "build-minify": "NODE_ENV=production postcss ./src/index.css --output ./dist/base.min.css --verbose",
     "build-normal": "postcss ./src/index.css --output ./dist/base.css --verbose",
+    "prepublish": "npm run build",
     "server": "browser-sync start --server ./example/ --files ./example/ --no-notify --no-open",
     "start": "npm run watch-example-styles",
     "test": "echo \"Error: no test specified\" && exit 1",
