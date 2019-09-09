@@ -2,6 +2,7 @@ node_modules/
 *.log*
 
 docs/
+example/
 src/
 .editorconfig
 postcss.config.js
