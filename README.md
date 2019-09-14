@@ -72,7 +72,8 @@ html {
 ## Credits
 A special thanks to those libraries that influenced this one:
 - Eric Meyer's [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
-- Nicolas Gallagher's [Normalize](https://github.com/necolas/normalize.css)
+- Nicolas Gallagher's [normalize.css](https://github.com/necolas/normalize.css)
+- Jonathan Neal's [sanitize.css](https://github.com/csstools/sanitize.css)
 - Jen Simmons's [CSS Remedy](https://github.com/mozdevs/cssremedy)
 
 [npm-url]: https://www.npmjs.com/package/@leaven-css/base
