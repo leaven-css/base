@@ -24,7 +24,7 @@ progress {
 
 /**
  * 1. Remove spacing below <img>
- * 2. Make images responsive
+ * 2. Make <img> responsive
  */
 img {
   vertical-align: middle; /* 1 */
@@ -32,8 +32,8 @@ img {
 }
 
 /**
- * Allow SVGs to use inherited `color`
+ * Remove default border
  */
-svg:not([fill]) {
-  fill: currentColor;
+iframe {
+  border: 0;
 }
