@@ -149,7 +149,7 @@ legend {
  * Remove red box-shadow invalid from Firefox
  */
 :-moz-ui-invalid {
-  /*box-shadow: none;*/
+  box-shadow: none;
 }
 
 /**
