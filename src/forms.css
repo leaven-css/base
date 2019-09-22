@@ -146,10 +146,10 @@ legend {
 }
 
 /**
- * Remove `:invalid` styling from Firefox
+ * Remove red box-shadow invalid from Firefox
  */
-:invalid {
-  box-shadow: none;
+:-moz-ui-invalid {
+  /*box-shadow: none;*/
 }
 
 /**
