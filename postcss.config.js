@@ -18,9 +18,7 @@ module.exports = (context) => {
       atImport,
       nesting,
       systemMonospace,
-      systemUI({
-        family: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue'
-      }),
+      systemUI,
       colorEmoji,
       pseudoClassAnyLink({
         preserve: false

@@ -44,7 +44,7 @@ input[type="submit"] {
 }
 
 /**
- * Correct opacity for diabled <input> in iOS Safari
+ * Correct opacity for disabled <input> in iOS Safari
  */
 input:disabled {
   opacity: 1;
