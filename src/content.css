@@ -21,7 +21,7 @@ pre {
  */
 pre {
   margin: 0;
-  overflow: scroll;
+  overflow: auto;
 }
 
 /**
