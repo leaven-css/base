@@ -44,6 +44,13 @@ input[type="submit"] {
 }
 
 /**
+ * Correct opacity for diabled <input> in iOS Safari
+ */
+input:disabled {
+  opacity: 1;
+}
+
+/**
  * 1. Correct outline style in Safari and Chrome
  */
 input[type="search"] {
@@ -83,9 +90,14 @@ input[type="range"] {
   }
 }
 
+select:disabled {
+  color: red;
+}
+
 /**
  * 1. Remove extra padding in Firefox
- * 2. Hide <select> arrow in IE11
+ * 2. Set correct font color for IE
+ * 3. Hide <select> arrow in IE11
  */
 select {
   cursor: pointer;
@@ -98,8 +110,12 @@ select {
     cursor: default;
   }
 
+  &:disabled::-ms-value {
+    color: inherit; /* 2 */
+  }
+
   &::-ms-expand {
-    display: none; /* 2 */
+    display: none; /* 3 */
   }
 }
 
