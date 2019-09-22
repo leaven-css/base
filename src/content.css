@@ -131,11 +131,8 @@ output {
  */
 summary {
   display: list-item; /* 1 */
+  list-style-type: none; /* 2 */
   cursor: pointer;
-
-  &::marker {
-    display: none; /* 2 */
-  }
 }
 
 /**
