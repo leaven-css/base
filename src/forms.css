@@ -79,15 +79,6 @@ input[type="number"] {
 }
 
 /**
- * Remove defined width and height in iOS Safari
- */
-input[type="checkbox"],
-input[type="radio"] {
-  width: auto;
-  height: auto;
-}
-
-/**
  * 1. Align range correctly
  * 2. Allow range thumb to be styled
  */
