@@ -132,7 +132,11 @@ fieldset {
   border: none;
 }
 
+/**
+ * 1. Set correct font color in IE
+ */
 legend {
+  color: inherit; /* 1 */
   padding: 0;
 }
 
