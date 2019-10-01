@@ -166,6 +166,13 @@ legend {
 }
 
 /**
+ * Hide search cancel button in Safari & Chrome
+*/
+::-webkit-search-cancel-button {
+  display: none;
+}
+
+/**
  * Remove padding for color input in Safari & Chrome
  */
 ::-webkit-color-swatch-wrapper {
