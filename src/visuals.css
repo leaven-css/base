@@ -18,10 +18,32 @@ figure {
   margin: 0;
 }
 
+
+/**
+ * 1. Set a default background color
+ * 2. Remove border in Firefox, IE, and Edge
+ * 3. Inherit color to remove blue progress color in IE
+ * 4. Set a default height
+ * 5. Set a resonable alignment
+ */
 progress {
-  appearance: none;
-  border: none;
-  vertical-align: middle;
+  background-color: lightgray; /* 1 */
+  border: none; /* 2 */
+  color: inherit; /* 3 */
+  height: 3px; /* 4 */
+  vertical-align: middle; /* 5 */
+
+  &::-webkit-progress-bar {
+    background-color: inherit;
+  }
+
+  &::-webkit-progress-value {
+    background-color: currentColor;
+  }
+
+  &::-moz-progress-bar {
+    background-color: currentColor;
+  }
 }
 
 /**

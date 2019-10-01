@@ -72,13 +72,23 @@ There are a few elements that are not fully reset:
 
 You should set root defaults for `font-size`, `min-width`, `color`, and `background-color` to better standardize things.
 
-#### Example
 ```css
 html {
   background-color: #fff;
   color: #333;
   min-width: 320px;
   font-size: 16px;
+}
+```
+
+### Progress
+
+Setting the `background-color` will set the background of the progress bar, while `color` will set the current progress or value.
+
+```css
+.progress-example {
+  background-color: lightpink;
+  color: red;
 }
 ```
 
