@@ -93,7 +93,7 @@ input[type="range"] {
 /**
  * 1. Remove extra padding in Firefox
  * 2. Set correct font color for IE
- * 3. Hide <select> arrow in IE11
+ * 3. Hide <select> arrow in IE
  */
 select {
   cursor: pointer;
@@ -196,8 +196,15 @@ legend {
 }
 
 /**
- * Hide checkbox and radio for IE11
+ * Hide checkbox and radio in IE
  */
 ::-ms-check {
+  display: none;
+}
+
+/**
+ * Hide cancel/clear button in IE
+ */
+::-ms-clear {
   display: none;
 }
