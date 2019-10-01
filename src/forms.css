@@ -208,3 +208,10 @@ legend {
 ::-ms-clear {
   display: none;
 }
+
+/**
+ * Hide reveal password button in IE & Edge
+ */
+::-ms-reveal {
+  display: none;
+}
