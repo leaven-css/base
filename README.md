@@ -9,7 +9,7 @@
 
 Markup should give semantic meaning and structure but not necessarily define styles. Is an `<h2>` always that size? Does a `<button>` always look that way?
 
-As a developer you should be in control of the styles you want for elements, especially when building components. **Leaven Base**'s goal is to reset as much browser styles as possible while still maintaining some opinionated defaults.
+As a developer you should be in control of the styles you want for elements, especially when building components. **Leaven Base**'s goal is to reset as much browser styles as possible while allowing for flexibility and customization.
 
 
 ## Install
@@ -40,17 +40,31 @@ It's recommended that you use [Autoprefixer](https://github.com/postcss/autopref
 
 ## Exceptions
 
-There are a few elements that are not fully reset: 
+There are a few elements that are not fully reset:
+
+### Color Input
 ```html
-<!-- File Input -->
+<input type="color">
+```
+- Firefox sets it's default width to be `64px`.
+- Edge 18 and below doesn't allow for any styling.
+- IE 11 defaults to a text field.
+
+### File Input
+```html
 <input type="file">
+```
 
-<!-- Range Input -->
+### Range Input
+```html
 <input type="range">
+```
 
-<!-- Progress -->
+### Progress
+```html
 <progress>
 ```
+
 
 ## Setup
 
