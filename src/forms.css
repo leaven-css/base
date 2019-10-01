@@ -159,18 +159,33 @@ legend {
 }
 
 /**
- * Remove extra padding in Safari
+ * Remove padding in Safari
  */
 ::-webkit-search-decoration {
   appearance: none;
 }
 
+/**
+ * Remove padding for color input in Safari & Chrome
+ */
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
+/**
+ * 1. Remove border for color input in Chrome
+ * 2. Remove border-radius for color input in Safari
+ */
 ::-webkit-color-swatch {
-  border: 0;
+  border: none; /* 1 */
+  border-radius: 0; /* 2 */
+}
+
+/**
+ * Remove border for color input in Firefox
+ */
+::-moz-color-swatch {
+  border: none;
 }
 
 /**
