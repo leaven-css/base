@@ -55,42 +55,15 @@ There are a few elements that are not fully reset:
 <input type="file">
 ```
 
-### Range Input
-```html
-<input type="range">
-```
-
 ### Progress
 ```html
 <progress>
 ```
 
 
-## Setup
+## Usage
 
-### Defaults
-
-You should set root defaults for `font-size`, `min-width`, `color`, and `background-color` to better standardize things.
-
-```css
-html {
-  background-color: #fff;
-  color: #333;
-  min-width: 320px;
-  font-size: 16px;
-}
-```
-
-### Progress
-
-Setting the `background-color` will set the background of the progress bar, while `color` will set the current progress or value.
-
-```css
-.progress-example {
-  background-color: lightpink;
-  color: red;
-}
-```
+Read more in the [Using Leaven Base document](./using-leaven-base.md).
 
 
 ## Credits

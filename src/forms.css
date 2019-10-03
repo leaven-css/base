@@ -79,14 +79,31 @@ input[type="number"] {
 }
 
 /**
- * 1. Align range correctly
- * 2. Allow range thumb to be styled
+ * 1. Set a more reasonable alignment
+ * 2. Center range thumb in Safari and Chrome
+ * 3. Hide track background in IE
+ * 4. Hide border and allow for border spacing in IE
+ * 5. Hide tick marks in IE
+ * 6. Allow range thumb to be styled
+ * 7. Reset the box-sizing in Firefox
  */
 input[type="range"] {
   vertical-align: middle; /* 1 */
 
+  &::range-track {
+    display: flex; /* 2 */
+    align-items: center; /* 2 */
+  }
+
+  &::-ms-track {
+    background-color: transparent; /* 3 */
+    border-color: transparent; /* 4 */
+    color: transparent; /* 5 */
+  }
+
   &::range-thumb {
-    appearance: none; /* 2 */
+    appearance: none; /* 6 */
+    box-sizing: border-box; /* 7 */
   }
 }
 
