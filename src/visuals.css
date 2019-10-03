@@ -28,6 +28,7 @@ figure {
  */
 progress {
   background-color: lightgray; /* 1 */
+  overflow: hidden;
   border: none; /* 2 */
   color: inherit; /* 3 */
   height: 3px; /* 4 */

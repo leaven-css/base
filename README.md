@@ -55,11 +55,6 @@ There are a few elements that are not fully reset:
 <input type="file">
 ```
 
-### Progress
-```html
-<progress>
-```
-
 
 ## Usage
 
