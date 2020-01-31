@@ -7,6 +7,6 @@ caption {
 }
 
 th {
-  font-weight: normal;
+  font-weight: inherit;
   text-align: inherit;
 }

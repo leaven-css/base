@@ -108,28 +108,32 @@ input[type="range"] {
 }
 
 /**
- * 1. Remove extra padding in Firefox
- * 2. Set correct font color for IE
- * 3. Hide <select> arrow in IE
+ * 1. Set correct font color for IE
+ * 2. Hide <select> arrow in IE
  */
 select {
   cursor: pointer;
-
-  & > option {
-    padding: 0; /* 1 */
-  }
 
   &:disabled {
     cursor: default;
   }
 
   &:disabled::-ms-value {
-    color: inherit; /* 2 */
+    color: inherit; /* 1 */
   }
 
   &::-ms-expand {
-    display: none; /* 3 */
+    display: none; /* 2 */
   }
+}
+
+/**
+ * 1. Remove padding in Chrome & Firefox
+ * 2. Inherit font weight in Chrome
+ */
+option {
+  padding: 0; /* 1 */
+  font-weight: inherit; /* 2 */
 }
 
 /**
