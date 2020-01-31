@@ -40,7 +40,7 @@ address,
 cite,
 em,
 i {
-  font-style: normal;
+  font-style: inherit;
 }
 
 /**
@@ -48,7 +48,7 @@ i {
  */
 b,
 strong {
-  font-weight: normal;
+  font-weight: inherit;
 }
 
 /**

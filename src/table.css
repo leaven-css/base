@@ -2,7 +2,11 @@ table {
   border-collapse: collapse;
 }
 
+caption {
+  text-align: inherit;
+}
+
 th {
   font-weight: normal;
-  text-align: left;
+  text-align: inherit;
 }
