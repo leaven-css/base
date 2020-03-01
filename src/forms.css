@@ -51,10 +51,12 @@ input:disabled {
 }
 
 /**
- * 1. Correct outline style in Safari and Chrome
+ * 1. Correct outline style in Safari
+ * 2. Correct outline width in iOS Safari
  */
 input[type="search"] {
   outline-offset: -2px; /* 1 */
+  outline-width: 5px; /* 2 */
 }
 
 /**
