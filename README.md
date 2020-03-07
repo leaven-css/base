@@ -38,25 +38,7 @@ yarn add @leaven-css/base
 It's recommended that you use [Autoprefixer](https://github.com/postcss/autoprefixer) as part of your build process to remove any unnecessary prefixes based on your own browser support.
 
 
-## Exceptions
-
-There are a few elements that are not fully reset:
-
-### Color Input
-```html
-<input type="color">
-```
-- Firefox sets it's default width to be `64px`.
-- Edge 18 and below doesn't allow for any styling.
-- IE 11 defaults to a text field.
-
-### File Input
-```html
-<input type="file">
-```
-
-
-## Usage
+## Usage & Exceptions
 
 Read more in the [Using Leaven Base document](./using-leaven-base.md).
 
