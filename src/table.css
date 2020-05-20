@@ -9,4 +9,9 @@ caption {
 th {
   font-weight: inherit;
   text-align: inherit;
+  padding: 0;
+}
+
+td {
+  padding: 0
 }
