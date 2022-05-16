@@ -24,17 +24,18 @@
     "watch": "npm run build:normal -- --watch"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
-    "chokidar": "^3.4.0",
-    "cssnano": "^4.1.10",
-    "express": "^4.17.1",
-    "postcss-cli": "^7.1.1",
-    "postcss-color-emoji": "^2.0.0",
-    "postcss-font-family-system-ui": "^4.2.0",
-    "postcss-import": "^12.0.1",
-    "postcss-input-range": "^4.0.0",
-    "postcss-nesting": "^7.0.1",
-    "postcss-pseudo-class-any-link": "^6.0.0",
-    "postcss-system-monospace": "^2.1.0"
+    "autoprefixer": "^10.4.7",
+    "chokidar": "^3.5.3",
+    "cssnano": "^5.1.7",
+    "express": "^4.18.1",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "postcss-color-emoji": "^4.0.0",
+    "postcss-font-family-system-ui": "^5.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-input-range": "^5.0.0",
+    "postcss-nesting": "^10.1.5",
+    "postcss-pseudo-class-any-link": "^7.1.3",
+    "postcss-system-monospace": "^4.0.0"
   }
 }
