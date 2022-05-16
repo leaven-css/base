@@ -3,6 +3,7 @@
  * 2. Use correct box sizing in Firefox
  * 3. Display overflow in Edge and IE
  * 4. Inherit color correctly in Firefox
+ * 5. Set full width within Flex parent
  */
 hr {
   border-width: 0 0 1px 0; /* 1 */
@@ -12,6 +13,8 @@ hr {
   height: 0;
   overflow: visible; /* 3 */
   color: inherit; /* 4 */
+  margin-left: 0; /* 5 */
+  margin-right: 0; /* 5 */
 }
 
 figure {
